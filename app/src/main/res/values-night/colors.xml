@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="splash_color">#142850</color>
-    <color name="onboard_color">#C4B6B6</color>
+    <color name="splash_color">#111A2C</color>
+    <color name="onboard_color">#EFE9E9</color>
     <color name="item_category_color">#F3F4F6</color>
     <color name="item_category_checked_color">#142850</color>
     <color name="bottom_color">#C4B6B6</color>
     <color name="bottom_item_true_color">#142850</color>
     <color name="bottom_item_color">#222831</color>
-    <color name="text_bold_color">#333647</color>
+    <color name="text_bold_color">#1A1F4C</color>
     <color name="search_color">#F3F4F6</color>
     <color name="card_setting_color">#F3F4F6</color>
     <color name="card_setting_checked_color">#142850</color>
