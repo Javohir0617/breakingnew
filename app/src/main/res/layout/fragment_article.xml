@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/aaa"
+            android:src="@drawable/loading"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.cardview.widget.CardView>
@@ -42,7 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/aaa"
+            android:src="@drawable/gif"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.cardview.widget.CardView>

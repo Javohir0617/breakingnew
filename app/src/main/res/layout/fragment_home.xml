@@ -49,6 +49,7 @@
             android:layout_height="@dimen/_45sdp">
             <androidx.appcompat.widget.SearchView
                 android:id="@+id/search_view"
+                app:queryHint="Search"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
         </androidx.cardview.widget.CardView>
@@ -103,7 +104,7 @@
             android:layout_height="wrap_content"/>
 
         <TextView
-            android:text="See All"
+            android:text="@string/see_all"
             android:textSize="@dimen/_12sdp"
             android:textColor="@color/text_bold_color"
             android:layout_marginRight="@dimen/_15sdp"

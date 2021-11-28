@@ -17,7 +17,7 @@
         android:layout_height="@dimen/_65sdp">
         <ImageView
             android:id="@+id/image"
-            android:src="@drawable/ic_launcher_background"
+            android:src="@drawable/gif"
             android:scaleType="centerCrop"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
