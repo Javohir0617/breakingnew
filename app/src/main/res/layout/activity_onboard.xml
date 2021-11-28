@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".screens.OnboardActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line_guid"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.62"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@id/line_guid"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/dots_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dotsColor="#F3F4F6"
+        app:dotsCornerRadius="5sp"
+        app:dotsSize="@dimen/_8sdp"
+        app:dotsSpacing="4dp"
+        app:dotsWidthFactor="2.5"
+        app:selectedDotColor="#475AD7"
+        app:progressMode="true"
+        />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:paddingStart="@dimen/_30sdp"
+        android:paddingEnd="@dimen/_30sdp"
+        android:id="@+id/view_pager"
+        app:layout_constraintBottom_toTopOf="@id/line_guid"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp"/>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/line"
+        android:text="First to know"
+        android:textColor="#333647"
+        android:textStyle="bold"
+        android:textSize="@dimen/_19ssp"
+        android:id="@+id/txt1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/txt1"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="All news in one place, be the first to know last news"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintVertical_bias="0.77"
+        android:maxWidth="@dimen/_220sdp"
+        android:gravity="center"
+        android:maxLines="3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.cardview.widget.CardView
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:focusable="true"
+        android:clickable="true"
+        android:id="@+id/card_next"
+        android:layout_marginBottom="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        app:cardBackgroundColor="@color/splash_color"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_42sdp">
+        <TextView
+            android:text="Next"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

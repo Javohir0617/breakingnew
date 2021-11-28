@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".screens.FavouriteActivity">
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="Select your favorite topics"
+        android:textColor="#333647"
+        android:textStyle="bold"
+        android:id="@+id/txt1"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:textSize="@dimen/_20ssp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txt2"
+        app:layout_constraintTop_toBottomOf="@id/txt1"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Select some of your favorite topics to let us suggest better news for you."
+        android:textSize="@dimen/_16ssp"
+        android:textColor="#7E7E7E"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        android:orientation="vertical"
+        app:spanCount="2"
+        tools:listitem="@layout/item_category"
+        android:layout_marginTop="@dimen/_17sdp"
+        app:layout_constraintTop_toBottomOf="@id/txt2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_360sdp"/>
+
+    <androidx.cardview.widget.CardView
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:focusable="true"
+        android:clickable="true"
+        android:id="@+id/card_next"
+        android:layout_marginBottom="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        app:cardBackgroundColor="@color/splash_color"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_42sdp">
+        <TextView
+            android:text="Next"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
